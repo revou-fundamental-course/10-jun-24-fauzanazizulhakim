@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Website Konversi</h1>
+      <p>Masukkan suhu Celcius (°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+      <form name="form-konversi">
+        <table class="konversi">
+          <tbody>
+            <tr>
+              <td>Celcius (°C):</td>
+            </tr>
+            <tr>
+              <td><input type="text" id="angka_input" class="intext" autofocus tabindex="1" /></td>
+            </tr>
+            <tr>
+              <td>
+                <button type="button" title="Konversi" class="btn" tabindex="2" onclick="konversi()">Konversi</button>
+                <button type="reset" title="Reset" class="btn" tabindex="3" onclick="reset()">Reset</button>
+                <button type="button" title="Reverse" class="btn" tabindex="4" onclick="toggleKonversi()">Reverse</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Fahrenheit (°F):</td>
+            </tr>
+            <tr>
+              <td><textarea rows="1" id="output" class="outtext" readonly tabindex="5"></textarea></td>
+            </tr>
+            <tr>
+              <td>Cara Kalkulasi:</td>
+            </tr>
+            <tr>
+              <td><textarea rows="1" id="output_kalkulasi" class="outtext" readonly tabindex="5"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      <hr />
+      <h3>Cara Konversi dari Celcius(°C) ke Fahrenheit(°F)</h3>
+      <p>Suhu S dalam Derajat Fahrenheit (°F) sama dengan suhu S dalam Derajat Celcius (°C) kali 9/5 tambah 32</p>
+      <p>S(°F) = (S(°C) x 9/5) + 32</p>
+      <p>atau</p>
+      <p>S(°F) = (S(°C) x 1.8) + 32</p>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
